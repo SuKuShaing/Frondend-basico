@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Selectores descendientes */
+        div p {
+            color: lime;
+        }
+        /* Selectores de hijo directo */
+        div > div {
+            background: plum;
+        }
+        /* Selectores de clase */
+        .es {
+            background: red;
+        }
+        /* Selector de Elemento adyacente */
+        div + section {
+            background: palevioletred;
+        }
+        /* Selector de hermano general siguiente */
+        div ~ p {
+            color: powderblue;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <P>teXTO</P>
+        <div>
+            <div>
+                <p>Platzi</p>
+                <div class="es">es</div>
+            </div>
+        </div>
+        <p>Clase de selectores</p>
+        <p>Clase de selectores</p>
+        <section>
+            master
+        </section>
+    </body>
+</body>
+</html>
