@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* PseudoClases es con : */
+        p {
+            color: salmon;
+            background-color: bisque;
+        }
+        p:hover {
+            color: skyblue;
+        }
+        div p:nth-child(2) {
+            color: violet;
+        }
+        /* PseudoElementos es con :: */
+        p::first-letter {
+            font-size: 1.8rem;
+        }
+        p::before {
+            content: "✨";
+        }
+        p::after {
+            content: "🌈";
+        }
+        ::placeholder {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>hola</p>
+    <div>
+        <p>hola</p>
+        <p>hola</p>
+        <p>hola</p>
+        <p>hola</p>
+    </div>
+    <input type="text" placeholder="name">
+</body>
+</html>
